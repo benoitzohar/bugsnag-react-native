@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author         = { 'Delisa Mason' => 'iskanamagus@gmail.com' }
   s.homepage       = "https://docs.bugsnag.com/platforms/react-native"
   s.source         = { :git => 'https://github.com/bugsnag/bugsnag-react-native.git', :tag => "v#{s.version}"}
-  s.platform       = :ios, '8.0'
+  s.platforms        = { :ios => "9.0", :tvos => "9.2" }
   s.preserve_paths = '*.js'
   s.libraries      = 'z', 'c++'
   s.frameworks     = 'MessageUI', 'SystemConfiguration'
